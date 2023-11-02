@@ -161,9 +161,40 @@ Skill Section
 .icon-flag {
   width: 20px;
   position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-20%, -70%);
+  transform: translate(0, -70%);
+}
+.skills {
+  background: var(--clr_grey_10);
+}
+.skill {
+  padding: 2.5rem 0;
+  text-align: center;
+  transition: var(--transition);
+}
+
+.skill-icon {
+  display: inline-block;
+  margin-bottom: 1.25rem;
+  color: var(--clr_primary);
+  font-size: 2.5rem;
+  transition: var(--transition);
+}
+
+.skill-title {
+  letter-spacing: 0.14rem;
+}
+.skill-text {
+  color: var(--clr_grey_5);
+  max-width: 17rem;
+  margin: 0 auto;
+}
+
+.skill:hover {
+  background: var(--clr_white);
+  box-shadow: 0 3px var(--clr_primary);
+}
+.skill:hover .skill-icon {
+  transform: translateY(-7px);
 }
 /* 
 ========================
