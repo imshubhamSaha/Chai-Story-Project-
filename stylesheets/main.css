@@ -145,6 +145,26 @@ Header
     var(--clr_primary)
   );
 }
+
+/* 
+========================
+Skill Section
+========================
+*/
+.icon-heart {
+  color: red;
+}
+.skill-flag {
+  display: inline-block;
+  position: relative;
+}
+.icon-flag {
+  width: 20px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-20%, -70%);
+}
 /* 
 ========================
 Media Query
