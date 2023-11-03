@@ -189,11 +189,13 @@ Skill Section
 
 .skill-title {
   letter-spacing: 0.14rem;
+  transition: var(--transition);
 }
 .skill-text {
   color: var(--clr_grey_5);
   max-width: 17rem;
   margin: 0 auto;
+  transition: var(--transition);
 }
 
 .skill:hover {
@@ -201,7 +203,13 @@ Skill Section
   box-shadow: 0 3px var(--clr_primary);
 }
 .skill:hover .skill-icon {
-  transform: translateY(-7px);
+  transform: translateY(-10px);
+}
+.skill:hover .skill-title {
+  transform: scale(1.2, 2);
+}
+.skill:hover .skill-text {
+  transform: translateY(5px);
 }
 /* 
 ========================
