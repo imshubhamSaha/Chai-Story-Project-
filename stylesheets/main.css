@@ -354,6 +354,94 @@ services section
 }
 /* 
 ========================
+contact section
+========================
+ */
+.contact {
+  background: var(--clr_grey_10);
+}
+.contact-form,
+.contact-info {
+  margin: 1rem 0;
+}
+
+.contact-item {
+  margin-bottom: 1.75rem;
+}
+
+.contact-title {
+  color: var(--clr_primary);
+  font-weight: 400;
+}
+.contact-text {
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
+.contact-form {
+  background: var(--clr_white);
+  border-radius: var(--radius);
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: var(--transition);
+  max-width: 35rem;
+}
+
+.contact-form:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+.contact-form h3 {
+  padding-top: 1.25rem;
+  color: var(--clr_grey_5);
+}
+
+.contact-flag {
+  display: inline-block;
+  position: relative;
+}
+
+.contact-icon-flag {
+  width: 1.325rem;
+  position: absolute;
+  transform: translate(-10%, -75%);
+}
+.form-group {
+  padding: 1rem 1.5rem;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: none;
+  margin-bottom: 1rem;
+  border-radius: var(--radius);
+  background: var(--clr_grey_10);
+  text-transform: uppercase;
+  letter-spacing: var(--spacing);
+}
+
+.form-control::placeholder {
+  text-transform: uppercase;
+  letter-spacing: var(--spacing);
+  font-family: var(--ff_primary);
+  color: var(--clr_grey_1);
+}
+
+.submit-btn {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  border-bottom-left-radius: var(--radius);
+  border-bottom-right-radius: var(--radius);
+}
+/* 
+========================
+footer section
+========================
+ */
+/* 
+========================
 Media Querys
 ========================
  */
@@ -458,5 +546,14 @@ Media Querys
   .service-card {
     width: 30%;
     margin-right: 3.333%;
+  }
+}
+
+/* contact form */
+@media screen and (min-width: 992px) {
+  .contact-form,
+  .contact-info {
+    float: left;
+    width: 50%;
   }
 }

@@ -301,8 +301,14 @@
             </h4>
             <h4 class="contact-text">
               2 RMZ ecospace <br />
-              koramangla, bangalore <br />
-              IND
+              koramangla <br />
+              bangalore, IND
+              <span class="contact-flag"
+                ><img
+                  src="./assets/images/india.png"
+                  alt="India"
+                  class="contact-icon-flag"
+              /></span>
             </h4>
           </div>
           <!-- end of first contact item -->
@@ -333,19 +339,21 @@
         <!-- contact-form -->
         <article class="contact-form">
           <h3>contact us</h3>
-          <form action="">
+          <form>
             <div class="form-group">
               <input
                 type="text"
                 placeholder="Name"
                 name="name"
                 class="form-control"
+                required
               />
               <input
                 type="email"
                 name="email"
                 placeholder="Email"
                 class="form-control"
+                required
               />
 
               <textarea
@@ -353,6 +361,7 @@
                 placeholder="Message"
                 class="form-control"
                 rows="5"
+                required
               ></textarea>
             </div>
             <!-- submit button -->
