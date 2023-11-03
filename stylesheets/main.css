@@ -104,6 +104,21 @@ p {
   clear: both;
   display: table;
 }
+.section-title h3 {
+  font-family: var(--ff_secondary);
+  color: var(--clr_primary);
+}
+
+.section-title {
+  margin-bottom: 2rem;
+}
+
+.section-center {
+  padding: 4rem 0;
+  width: 85vw;
+  margin: 0 auto;
+  max-width: 1170px;
+}
 /* 
 ========================
 Header
@@ -160,15 +175,16 @@ Skill Section
 */
 .icon-heart {
   color: red;
+  font-size: 0.9rem;
 }
 .skill-flag {
   display: inline-block;
   position: relative;
 }
 .icon-flag {
-  width: 20px;
+  width: 17px;
   position: absolute;
-  transform: translate(0, -70%);
+  transform: translate(0, -80%);
 }
 .skills {
   background: var(--clr_grey_10);
@@ -188,7 +204,7 @@ Skill Section
 }
 
 .skill-title {
-  letter-spacing: 0.14rem;
+  letter-spacing: 0.1rem;
   transition: var(--transition);
 }
 .skill-text {
@@ -211,6 +227,40 @@ Skill Section
 .skill:hover .skill-text {
   transform: translateY(5px);
 }
+/* 
+========================
+About section
+========================
+ */
+
+.about-img,
+.about-info {
+  padding: 2rem 0;
+}
+.about-info {
+  transition: var(--transition);
+}
+.about-picture-container {
+  background: var(--clr_primary);
+  border: 0.5rem solid var(--clr_primary);
+  max-width: 30rem;
+  overflow: hidden;
+}
+
+.about-picture {
+  transition: var(--transition);
+}
+
+.about-picture-container:hover .about-picture {
+  opacity: 0.5;
+  transform: scale(1.2);
+}
+
+.about-text {
+  max-width: 26rem;
+  color: var(--clr_grey_5);
+}
+
 /* 
 ========================
 Media Querys
@@ -241,6 +291,12 @@ Media Querys
   }
 }
 
+@media screen and (min-width: 992px) {
+  .section-center {
+    width: 95vw;
+    padding: 4rem 1rem;
+  }
+}
 /* Skills */
 @media screen and (min-width: 576px) {
   .skill {
@@ -252,5 +308,18 @@ Media Querys
 @media screen and (min-width: 1200px) {
   .skill {
     width: 25%;
+  }
+}
+
+/* about */
+@media screen and (min-width: 992px) {
+  .about-img,
+  .about-info {
+    float: left;
+    width: 50%;
+  }
+
+  .about-info {
+    padding-left: 2rem;
   }
 }
