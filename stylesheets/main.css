@@ -263,6 +263,33 @@ About section
 
 /* 
 ========================
+Products section
+========================
+*/
+.products {
+  background: var(--clr_grey_10);
+}
+.products article {
+  padding: 2rem 0;
+}
+.product-text {
+  color: var(--clr_grey_5);
+  max-width: 26rem;
+}
+.product {
+  margin-bottom: 2rem;
+}
+.product-img {
+  border-radius: var(--radius);
+  margin-bottom: 2rem;
+  height: 18rem;
+  object-fit: cover;
+}
+.product-price {
+  color: var(--clr_primary);
+}
+/* 
+========================
 Media Querys
 ========================
  */
@@ -321,5 +348,35 @@ Media Querys
 
   .about-info {
     padding-left: 2rem;
+  }
+}
+
+/* Products */
+@media screen and (min-width: 768px) {
+  .product {
+    float: left;
+    width: 50%;
+    padding-right: 1rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .product {
+    width: 33.33%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .product-info {
+    float: left;
+    width: 30%;
+  }
+  .product-inventory {
+    float: left;
+    width: 70%;
+  }
+  .product {
+    margin: 0;
+    padding: 0 0.5rem;
   }
 }
