@@ -121,6 +121,20 @@ p {
 }
 /* 
 ========================
+Navbar
+========================
+ */
+.nav-btn {
+  position: fixed;
+  top: 2%;
+  left: 5%;
+  font-size: 3rem;
+  color: var(--clr_primary);
+  z-index: 1;
+  cursor: pointer;
+}
+/* 
+========================
 Header
 ========================
  */
