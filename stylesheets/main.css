@@ -340,6 +340,7 @@ Skill Section
   padding: 2.5rem 0;
   text-align: center;
   transition: var(--transition);
+  /* updated */
   overflow: hidden;
 }
 
