@@ -121,17 +121,90 @@ p {
 }
 /* 
 ========================
+Animations
+========================
+ */
+/* for nav button */
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+/* from right */
+@keyframes slideFromRight {
+  0% {
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+  50% {
+    transform: translateX(-100px);
+    opacity: 0.5;
+  }
+  75% {
+    transform: translateX(100px);
+    opacity: 0.75;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+/* From left */
+@keyframes slideFromLeft {
+  0% {
+    transform: translateX(-1000px);
+    opacity: 0;
+  }
+  50% {
+    transform: translateX(100px);
+    opacity: 0.5;
+  }
+  75% {
+    transform: translateX(-100px);
+    opacity: 0.75;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+/* for brand button (explore) */
+@keyframes scaleButton {
+  0% {
+    transform: scale(1.2);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.7);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+/* 
+========================
 Navbar
 ========================
  */
 .nav-btn {
   position: fixed;
-  top: 2%;
+  top: 3%;
   left: 5%;
   font-size: 3rem;
   color: var(--clr_primary);
   z-index: 1;
   cursor: pointer;
+  /* animation */
+  animation: bounce 2s ease infinite;
 }
 
 .navbar {
@@ -198,6 +271,7 @@ Header
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("../assets/images/mainbcg.jpg") center/cover no-repeat fixed;
   position: relative;
+  /* animation */
   overflow-x: hidden;
 }
 .banner {
@@ -211,6 +285,7 @@ Header
   font-family: var(--ff_secondary);
   color: var(--clr_primary);
   /* animation */
+  animation: slideFromRight 5s ease-in-out 1;
 }
 .banner h1 {
   color: var(--clr_white);
@@ -218,12 +293,15 @@ Header
   margin-top: 1.25rem;
   margin-bottom: 2rem;
   /* animation */
+  animation: slideFromLeft 5s ease-in-out 1;
 }
 .btn-banner {
   outline: 0.125rem solid var(--clr_primary);
   outline-offset: 0.25rem;
   font-size: 1.25rem;
   padding: 1rem 1.75rem;
+  /* animation */
+  animation: scaleButton 5s linear 1;
 }
 
 /* content - divider */
