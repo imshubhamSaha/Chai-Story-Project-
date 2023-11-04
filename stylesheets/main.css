@@ -340,6 +340,7 @@ Skill Section
   padding: 2.5rem 0;
   text-align: center;
   transition: var(--transition);
+  overflow: hidden;
 }
 
 .skill-icon {
@@ -367,6 +368,10 @@ Skill Section
 }
 .skill:hover .skill-icon {
   transform: translateY(-10px);
+}
+
+.skill:hover .skill-title {
+  transform: scale(1.2, 1.2);
 }
 
 .skill:hover .skill-text {
